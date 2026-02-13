@@ -27,3 +27,13 @@ Includes API client abstraction, fixtures, parametrized tests, JSON Schema valid
 ├── requirements.txt
 ├── pytest.ini
 └── .github/workflows/ci.yml
+
+## Skills Demonstrated
+
+- Writing API tests using Pytest
+- Designing reusable API client abstraction
+- Using fixtures and parametrization
+- JSON schema validation
+- Performance check (response time)
+- CI integration with GitHub Actions
+- Clean project structure (src layout)
