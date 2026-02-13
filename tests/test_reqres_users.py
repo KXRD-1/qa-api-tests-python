@@ -3,7 +3,7 @@ from jsonschema import validate
 
 from qa_api.api_client import ApiClient
 
-
+@pytest.mark.smoke
 @pytest.mark.parametrize(
     "path, expected_status",
     [
