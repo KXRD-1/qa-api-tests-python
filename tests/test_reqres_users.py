@@ -52,3 +52,16 @@ def test_single_post_matches_schema(api_client: ApiClient):
     }
 
     validate(instance=response.json(), schema=schema)
+
+import time
+
+
+def test_posts_response_time_under_2_seconds(api_client: ApiClient):
+    start = time.perf_counter()
+
+    response = api_client.get("/posts")
+
+    elapsed = time.perf_counter() - start
+
+    assert response.status_code == 200
+    assert elapsed < 2.0
